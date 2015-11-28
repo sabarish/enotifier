@@ -17,8 +17,7 @@ test:
   password:
 
 production:
-  adapter: mysql2
+  <<: *common
   database: enotifier_production
   username: root
-  password:
-  pool: 5
+  password:  
