@@ -5,17 +5,19 @@ common: &common
   reconnect: true
 
 development:
-  <<: *common  
+  <<: *common
   database: enotifier_development
   username: root
   password:
 
-test:  
+test:
+  <<: *common
   database: enotifier_test
   username: root
   password:
 
 production:
+  <<: *common
   database: enotifier_production
   username: root
   password:  
