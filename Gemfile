@@ -13,8 +13,7 @@ gem 'mysql2', '0.3.14'
 group :assets do
   gem 'sass-rails', '3.2.5'  
   gem 'uglifier'
-  gem 'therubyracer', '~> 0.12.1'
-  gem 'asset_sync'  
+  gem 'therubyracer', '~> 0.12.1'    
 end
 
 gem 'jquery-rails'
