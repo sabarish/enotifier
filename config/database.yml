@@ -20,5 +20,5 @@ production:
   <<: *common
   url: <%= ENV['DATABASE_URL'] %>
   database: enotifier_production
-  username: root
-  password:  
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
