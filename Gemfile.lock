@@ -59,7 +59,6 @@ GEM
     mime-types (1.25.1)
     multi_json (1.11.2)
     mysql2 (0.3.14)
-    pg (0.18.4)
     polyglot (0.3.5)
     rack (1.4.7)
     rack-cache (1.5.1)
@@ -118,7 +117,6 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   mysql2 (= 0.3.14)
-  pg
   rails (= 3.2.21)
   rails-dev-boost!
   sass-rails (= 3.2.5)
