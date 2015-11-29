@@ -4,6 +4,30 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome! </h1>
+    <% if @birthdays.present? %>
+      Wishing many more happy returns of the day to <br/>
+      <% @birthdays.each do |birthday| %>
+        <h3><%= birthday.name %></h3>
+      <% end %>
+    <% end %>
+    <br/><br/>
+    
+    <% if @weddings.present? %>
+      Wishing a very happy wedding anniversary to <br/>
+      <% @weddings.each do |wedding| %>
+        <h3><%= wedding.name %></h3>
+      <% end %>
+    <% end %>
+    <br/><br/>
+    
+    <% if @office_anniversaries.present? %>
+      Wishing a very successful year of completion to <br/>
+      <% @office_anniversaries.each do |office_anniversaries| %>
+        <h3><%= office_anniversaries.name %></h3>
+      <% end %>
+    <% end %>
+    <br/><br/>
+
+    Have a great year ahead! :)
   </body>
 </html>
