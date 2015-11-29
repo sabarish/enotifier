@@ -16,4 +16,10 @@ class Group < ActiveRecord::Base
     end
     [birthdays, weddings, office_anniversaries]
   end
+
+  def self.send_daily_notifications
+    Group.all.each do |group|      
+      NotificationMailer.daily_notification(group).deliver
+    end
+  end
 end
