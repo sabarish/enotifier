@@ -1,6 +1,6 @@
 class NotificationMailer < ActionMailer::Base
  
-  default from: 'sabarishsankar89@gmail.com'
+  default from: 'groups.enotifier@gmail.com'
  
   def daily_notification(group)
     @group = group
@@ -12,6 +12,6 @@ class NotificationMailer < ActionMailer::Base
     subject << "Happy Birthday" if @birthdays.present?
     subject << "Happy Wedding Day" if @weddings.present?
     subject << "Happy Office Anniversary" if @office_anniversaries.present?
-    mail(from: "#{@group.name} <sabarishsankar89@gmail.com>", to: @group.email, subject: "#{subject.to_sentence}!") if @notifications.flatten.present?
+    mail(from: "#{@group.name} <groups.enotifier@gmail.com>", to: @group.email, subject: "#{subject.to_sentence}!") if @notifications.flatten.present?
   end
 end
