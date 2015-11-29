@@ -12,6 +12,6 @@ class NotificationMailer < ActionMailer::Base
     subject << "Happy Birthday" if @birthdays.present?
     subject << "Happy Wedding Day" if @weddings.present?
     subject << "Happy Office Anniversary" if @office_anniversaries.present?
-    mail(to: @group.email, subject: subject.to_sentence)
+    mail(to: @group.email, subject: "#{subject.to_sentence}!") if @notifications.flatten.present?
   end
 end

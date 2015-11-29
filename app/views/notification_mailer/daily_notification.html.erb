@@ -5,28 +5,28 @@
   </head>
   <body>
     <% if @birthdays.present? %>
-      Wishing many more happy returns of the day to <br/>
+      <h4>Wishing many more happy returns of the day to <br/></h4>
       <% @birthdays.each do |birthday| %>
         <h3><%= birthday.name %></h3>
       <% end %>
-    <% end %>
-    <br/><br/>
+      <br/><br/>
+    <% end %> 
     
     <% if @weddings.present? %>
-      Wishing a very happy wedding anniversary to <br/>
+      <h4>Wishing a very happy wedding anniversary to <br/></h4>
       <% @weddings.each do |wedding| %>
         <h3><%= wedding.name %></h3>
       <% end %>
+      <br/><br/>
     <% end %>
-    <br/><br/>
     
     <% if @office_anniversaries.present? %>
-      Wishing a very successful year of completion to <br/>
+      <h4>Wishing a very successful year of completion to <br/></h4>
       <% @office_anniversaries.each do |office_anniversaries| %>
         <h3><%= office_anniversaries.name %></h3>
       <% end %>
+      <br/><br/>
     <% end %>
-    <br/><br/>
 
     Have a great year ahead! :)
   </body>
