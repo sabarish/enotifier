@@ -10,9 +10,9 @@ class Group < ActiveRecord::Base
     weddings = []
     office_anniversaries = []
     self.users.each do |user|      
-      birthdays << user if user.birth_date == date
-      weddings << user if user.wedding_date == date
-      office_anniversaries << user if user.joining_date == date
+      birthdays << user if user.birth_date.day == date.day && user.birth_date.month == date.month
+      weddings << user if user.wedding_date.day == date.day && user.wedding_date.month == date.month
+      office_anniversaries << user if user.joining_date.day == date.day && user.joining_date.month == date.month
     end
     [birthdays, weddings, office_anniversaries]
   end
