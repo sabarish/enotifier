@@ -4,7 +4,7 @@ class NotificationMailer < ActionMailer::Base
  
   def daily_notification(group)
     @group = group
-    @notifications = @group.fetch_users_with_notifications_for_date
+    @notifications = @group.fetch_users_with_notifications_for_date(Date.today+1.day)
     @birthdays = @notifications[0]
     @weddings = @notifications[1]
     @office_anniversaries = @notifications[2]
