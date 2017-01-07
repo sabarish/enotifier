@@ -70,7 +70,7 @@ Eventsmailer::Application.configure do
     :address        => ENV['MAILGUN_SMTP_SERVER'],
     :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
     :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => 'enotifier.heroku.com',
+    :domain         => 'radiant-plains-28947.heroku.com',
     :authentication => :plain,
   }  
 
