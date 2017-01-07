@@ -7,6 +7,7 @@ gem 'rails', '3.2.21'
 
 gem 'mysql'
 gem 'mysql2', '0.3.14'
+gem 'test-unit'
 
 # Gems used only for assets and not required
 # in production environments by default.
