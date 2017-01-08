@@ -8,11 +8,13 @@ gem 'rails', '3.2.21'
 gem 'mysql'
 gem 'mysql2', '0.3.14'
 gem 'test-unit'
+gem 'devise', '3.4.1'
+gem 'bootstrap-sass', '3.1.1.0'
+gem 'sass-rails', '3.2.5'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails', '3.2.5'  
   gem 'uglifier'
   gem 'therubyracer', '~> 0.12.1'
 end
